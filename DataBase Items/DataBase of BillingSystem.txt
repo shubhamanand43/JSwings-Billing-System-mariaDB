@@ -1,0 +1,136 @@
+After Insertion of Items and Prices;-----------
+
+CREATE TABLE Customer ( Cus_ID bigint(20) NOT NULL, Cus_Name VARCHAR(50), Cus_Address VARCHAR(50), PRIMARY KEY (Cus_ID));
+
+CREATE TABLE Bill ( 
+Bill_ID bigint(20) NOT NULL, 
+Cus_ID bigint(20),
+TQantity float(6,3), 
+Grand_Total double(10,2), 
+Date_Time datetime, 
+PRIMARY KEY (Bill_ID));
+
+CREATE TABLE totalbilldesc ( 
+Bill_ID bigint(20),
+Cus_ID bigint(20), 
+Item varchar(50), 
+Item_Price double(10,2), 
+Quantity float(6,3), 
+Price float(10,2), 
+Date_Time timestamp on update current_timestamp);
+
+CREATE TABLE billdesctemp (
+Bill_ID bigint(20),
+Cus_ID bigint(20),
+Item varchar(50),
+Item_Price float(10,2),
+Quantity float(6,3),
+Price float(10,2),
+Date_Time timestamp on update current_timestamp);
+
+CREATE TABLE testpr (
+imp_id int not null,
+emp_name varchar(50),
+salary float (8,2),
+emp_dept_no int,
+Date_Time timestamp on update current_timestamp,
+PRIMARY KEY (imp_id));
+------------------------------------------------------------------------------------------------------------
+
+Drop table totalbilldesc;
+Drop table billdesctemp;
+Drop table bill;
+Drop table customer;
+
+------------------------------------------------------------------------------------------------------------
+
+Create Table vegetables (Items varchar(50), Price float(10,3));
+Create Table fruits (Items varchar(50), Price float(10,3));
+Create Table stationary (Items varchar(50), Price float(10,3));
+Create Table kitchen (Items varchar(50), Price float(10,3));
+Create Table others (Items varchar(50), Price float(10,3));
+
+---------------------------------------------------------------------------------------------------------------
+
+INSERT INTO VALUES ('', );
+
+INSERT INTO vegetables VALUES ('Beetroot', 23);
+INSERT INTO vegetables VALUES ('Cabbage', 22);
+INSERT INTO vegetables VALUES ('Capsicum', 43);
+INSERT INTO vegetables VALUES ('Carrot', 33);
+INSERT INTO vegetables VALUES ('Cauliflower', 23);
+INSERT INTO vegetables VALUES ('Chilli', 65);
+INSERT INTO vegetables VALUES ('Beans', 23);
+INSERT INTO vegetables VALUES ('Corn', 33);
+INSERT INTO vegetables VALUES ('Cucumber', 32);
+INSERT INTO vegetables VALUES ('Brinjal', 24);
+INSERT INTO vegetables VALUES ('Garlic', 124);
+INSERT INTO vegetables VALUES ('Ginger', 50);
+INSERT INTO vegetables VALUES ('Potato', 29);
+INSERT INTO vegetables VALUES ('Gram flour', 25);
+INSERT INTO vegetables VALUES ('Jackfruit', 45);
+
+INSERT INTO fruits VALUES ('Apple', 60);
+INSERT INTO fruits VALUES ('Banana', 25);
+INSERT INTO fruits VALUES ('Bluebarry', 45);
+INSERT INTO fruits VALUES ('Coconut', 24);
+INSERT INTO fruits VALUES ('Dates', 280);
+INSERT INTO fruits VALUES ('Fig', 340);
+INSERT INTO fruits VALUES ('Goosbarry', 46);
+INSERT INTO fruits VALUES ('Grapes', 68);
+INSERT INTO fruits VALUES ('Guava', 32);
+INSERT INTO fruits VALUES ('Jack', 46);
+INSERT INTO fruits VALUES ('Lemon', 30);
+INSERT INTO fruits VALUES ('Lime', 44);
+INSERT INTO fruits VALUES ('Lychee', 33);
+INSERT INTO fruits VALUES ('Mango', 35);
+INSERT INTO fruits VALUES ('Orange', 40);
+
+INSERT INTO kitchen VALUES ('Arhar', 70);
+INSERT INTO kitchen VALUES ('Chana', 67);
+INSERT INTO kitchen VALUES ('Dalia', 50);
+INSERT INTO kitchen VALUES ('Kabuli', 60);
+INSERT INTO kitchen VALUES ('Kulthi', 59);
+INSERT INTO kitchen VALUES ('Masoor', 70);
+INSERT INTO kitchen VALUES ('Matar', 64);
+INSERT INTO kitchen VALUES ('Poha', 40);
+INSERT INTO kitchen VALUES ('Rajma', 50);
+INSERT INTO kitchen VALUES ('Til', 300);
+INSERT INTO kitchen VALUES ('Bajra', 30);
+INSERT INTO kitchen VALUES ('Gehun', 25);
+INSERT INTO kitchen VALUES ('Jow', 26);
+INSERT INTO kitchen VALUES ('Makai', 25);
+INSERT INTO kitchen VALUES ('Adrak', 54);
+INSERT INTO kitchen VALUES ('Ajwaain', 543);
+
+INSERT INTO stationary VALUES ('Ball_Pens', 15);
+INSERT INTO stationary VALUES ('Pen_Stands', 12);
+INSERT INTO stationary VALUES ('Erasers', 5);
+INSERT INTO stationary VALUES ('Geometry_Box', 50);
+INSERT INTO stationary VALUES ('Plastic_File', 10);
+INSERT INTO stationary VALUES ('Tape_Dispenser', 10);
+INSERT INTO stationary VALUES ('Pencil_Sharpener', 10);
+INSERT INTO stationary VALUES ('File_Folders', 20);
+INSERT INTO stationary VALUES ('Notepads', 30);
+INSERT INTO stationary VALUES ('Visiting_Card_Holder', 10);
+INSERT INTO stationary VALUES ('Writing_Pens', 10);
+INSERT INTO stationary VALUES ('Exercise_Notebooks', 30);
+INSERT INTO stationary VALUES ('Permanent_Marker', 40);
+INSERT INTO stationary VALUES ('Pen_Box', 40);
+
+INSERT INTO others VALUES ('Ring_Binder', 10);
+INSERT INTO others VALUES ('Magazine_Holders', 10);
+INSERT INTO others VALUES ('Fountain_Pens', 20);
+INSERT INTO others VALUES ('Scrapbook', 40);
+INSERT INTO others VALUES ('Office_Stationery', 30);
+INSERT INTO others VALUES ('Letter_Pad', 20);
+INSERT INTO others VALUES ('Binder_Clips', 2);
+INSERT INTO others VALUES ('Drawing_Books', 30);
+INSERT INTO others VALUES ('Colored_Pens', 100);
+INSERT INTO others VALUES ('Gel_Pen', 20);
+INSERT INTO others VALUES ('Ruler', 15);
+INSERT INTO others VALUES ('Pencil_Erasers', 5);
+INSERT INTO others VALUES ('File_Clips', 20);
+INSERT INTO others VALUES ('Spring_Files', 30);
+INSERT INTO others VALUES ('School_Notebooks', 40);
+INSERT INTO others VALUES ('Flash_Cards', 27);

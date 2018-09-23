@@ -1,0 +1,205 @@
+Vegetables-----------
+Beetroot
+Cabbage
+Capsicum
+Carrot
+Cauliflower
+Chilli
+Beans
+Corn
+Cucumber
+Brinjal
+Garlic
+Ginger
+Potato
+Gram flour
+Green Gram
+Little Gourd
+Jackfruit
+Kohlrabi Turnip
+Lady's finger
+Lotus stem
+Lotus root
+mushrom
+Mustard greens
+Onion
+Peanut
+Pea
+Pudina
+Plantain
+Pulses
+Pumpkin
+Radish
+Ridged gourd
+Snake Gourd
+Spinach
+Spring onion
+Sweet Potato
+Tamarind
+Tomato
+Turmeric
+-----------------------------------------------------
+Fruits--------------
+Apple 
+Banana
+Bluebarry
+Coconut
+Dates
+Fig
+Goosbarry
+Grapes
+Guava
+Jackfruit
+Lemon
+Lime
+Lychee
+Mango
+Orange
+Papaya
+Pineapple
+Pomogranate
+Watermelon
+------------------------------------------------------
+Pulses And Spices----------
+Arhar
+Chana
+Dalia
+Kabuli
+Kulthi
+Masoor
+Matar
+Poha
+Rajma
+Til
+Bajra
+Gehun
+Jow
+Makai
+Adrak
+Ajwaain
+Daalchini
+Elaichi
+Hing
+Jaiphal
+Jeera
+Kaali Mirch
+Laung
+Raai
+Sarson
+Tej patta
+Chhoti Saunf
+Maida
+Rava
+Sabudana
+Saunf
+------------------------------------------------------
+Explore Stationery Items Categories
+Stationery_Items
+Ball_Pens
+Stationery_Products
+Pen_Stands
+Erasers
+Geometry_Box
+Plastic_File
+Tape_Dispenser
+Pencil_Sharpener
+File_Folders
+Notepads
+Visiting_Card_Holder
+Writing_Pens
+Exercise_Notebooks
+Permanent_Marker
+Pen_Box
+------------------------------------------------------
+others---------
+
+Ring_Binder
+Magazine_Holders
+Fountain_Pens
+Scrapbook
+Office_Stationery
+Letter_Pad
+Binder_Clips
+Drawing_Books
+Colored_Pen
+Gel_Pen
+Ruler
+Pencil_Erasers
+File_Clips
+Spring_Files
+School_Notebooks
+Flash_Cards
+Document_Holder
+Pen_Gift_Set
+Coloured_pencil
+Pens
+Pencils
+Exam_Pad
+Lever_Arch_File
+Business Card
+Leather Cheque 
+Cash Book
+Cash Book
+Stationery Gift
+Stationery Tapes
+Practical Note 
+Leather Journals
+School Stationery
+Pin Up Boards
+Product Display Stand
+Report File
+Pen Refills
+Drawing Paper
+Id Card Holder
+Pencil Pouches
+Paper Notebook
+Desk Sets
+Paper Stationery
+Polymer Pencils
+Plastic Folders
+Expanding File
+Printed Office Stationery
+Push Pin
+Paper Folders
+Writing Notebook
+Stationery Set
+Electronic Whiteboard
+Desk Organizer
+Parker Pen
+Printed Paper Boxes
+Paper File Folder
+Pvc File
+Staple Pins
+Document Case
+Pencil Sets
+Pencil Holders
+Scribble Pads
+Executive Folder
+Gold Pen
+Eraser Pen
+Pen Ink
+Cheque Book Holder
+Conference Pad
+Tape Cutter
+Drawing Pins
+Pen Case
+Desktop Organizer
+Plastic Scale
+Letter Opener
+Quran Reading Pen
+Leather Notebooks
+Paper Pins
+Book Covers
+Canvas Roll
+Plastic Pencil Sharpener
+Soft Cover Notebook
+Envelope Folder
+Slip Pads
+Letter Holders
+Strip Files
+Plastic Rulers
+Wooden Pencils
+Executive File
+Packing List
+----------------------------------------------------------
+

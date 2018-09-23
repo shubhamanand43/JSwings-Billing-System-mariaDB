@@ -1,0 +1,86 @@
+select * from customer;
+select * from bill;
+select * from billdesctemp;
+select * from totalbilldesc;
+select * from bill;
+select * from billdesctemp;
+select * from totalbilldesc;
+
+select * from testpr;
+
+desc bill;
+
+delete from customer where Cus_ID = ;
+delete from totalbilldesc where Cus_ID = ;
+delete from billdesctemp where Cus_ID = ;
+delete from bill where Cus_ID = ;
+
+delete from testpr where imp_id = ;
+
+
+try 
+			
+{
+				String sql = "SELECT * FROM billdesctemp";
+				PreparedStatement pstmt = con.prepareStatement(sql);
+				ResultSet rs = pstmt.executeQuery();
+				table.setModel(DbUtils.resultSetToTableModel(rs));
+	            } catch (Exception e) { System.out.println(e);	}
+
+---------------------------------------------------------------------------------------------------------------
+try
+    		{
+    			String vegetable = null;
+    			float iprice = 0;
+    			
+    			PreparedStatement pstmt = con.prepareStatement("insert into billdesctemp values( ?, ?, ?, ?, ?, ?, NOW())");  
+    			PreparedStatement pstmt_2 = con.prepareStatement("insert into totalbilldesc values( ?, ?, ?, ?, ?, ?, NOW())"); 
+    			
+    			pstmt.setLong(1,timeI);  //1 specifies the first parameter in the query  
+    			pstmt_2.setLong(1, timeI);
+    			
+    			pstmt.setLong(2, Long.parseLong(txtCusContactNo.getText()));
+    			pstmt_2.setLong(2, Long.parseLong(txtCusContactNo.getText()));
+    			
+    			if(comboBox.getSelectedItem().toString() != null)
+        			vegetable = (String)comboBox.getItemAt(comboBox.getSelectedIndex());
+        		else
+        			System.out.println("nulle");
+    			
+        		pstmt.setString(3, vegetable);
+        		pstmt_2.setString(3, vegetable);
+        		
+        		PreparedStatement pstmt_1 = null;
+    			try {
+					String sql_1 = " SELECT Price FROM vegetables WHERE Vegetables = '" + vegetable + "' ";
+					pstmt_1 = con.prepareStatement(sql_1);
+					ResultSet rs_5 = pstmt_1.executeQuery();
+					if (rs_5.next()) {
+						iprice = rs_5.getFloat("Price");
+					}
+				} catch (Exception e) {
+				}
+    			
+    			pstmt.setFloat(4, iprice);
+    			pstmt_2.setFloat(4, iprice);
+    			
+    			Float iQua = Float.parseFloat(textField.getText());
+    			
+    			pstmt.setFloat(5, iQua);
+    			pstmt_2.setFloat(5, iQua);
+    			
+    			Float calPrice = iprice * iQua ;
+    			
+    			pstmt.setFloat(6, calPrice);
+    			pstmt_2.setFloat(6, calPrice);
+    			
+    			int i = pstmt.executeUpdate();
+    			int j = pstmt_2.executeUpdate();
+    			
+    			System.out.println(i+j +" records inserted");
+    			}
+    		catch ( Exception e )
+    		{ 
+    			System.out.println(e);
+    		}
+---------------------------------------------------------------------------------------------------------------
